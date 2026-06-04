@@ -4,6 +4,8 @@ compatibility_date = "2024-12-01"
 
 [vars]
 ENVIRONMENT = "development"
+FIREBASE_PROJECT_ID = ""
+CORS_ORIGIN = "http://localhost:5173"
 
 # Future cron (merchantStats rollups):
 # [triggers]

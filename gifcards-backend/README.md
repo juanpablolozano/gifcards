@@ -29,6 +29,12 @@ curl http://localhost:8787/health
 # → {"status":"ok"}
 ```
 
+Con autenticación configurada, validar sesión:
+
+```bash
+curl -H "Authorization: Bearer <firebase_id_token>" http://localhost:8787/api/v1/auth/session
+```
+
 ### Variables de entorno locales (opcional)
 
 Para secrets en desarrollo, copia el ejemplo y rellena los valores:
