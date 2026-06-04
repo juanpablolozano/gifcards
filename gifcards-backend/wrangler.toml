@@ -1,0 +1,14 @@
+name = "gifcards-backend"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+[vars]
+ENVIRONMENT = "development"
+
+# Future cron (merchantStats rollups):
+# [triggers]
+# crons = ["0 */15 * * *"]
+
+# Secrets (wrangler secret put / .dev.vars):
+# STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, FIREBASE_SERVICE_ACCOUNT
+# AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, S3_BUCKET, BEELY_API_KEY

@@ -1,0 +1,20 @@
+---
+description: Frontend React Rules
+globs:
+  - "gifcards-frontend/**/*"
+---
+
+# Frontend Standards
+
+- Use TypeScript
+- Use React Hooks
+- Use Chakra UI
+- Use Zustand
+- Use camelCase for variable names
+
+## Component architecture
+
+- **Modular components**: Every UI piece must be a self-contained, reusable module with a single responsibility.
+- **One component per file**: Each file exports exactly one component (named after the file, e.g. `GiftCardPreview.tsx` → `GiftCardPreview`).
+- **Minimal props**: Pass only the props strictly required for that component to render; avoid prop drilling. Prefer reading shared state from Zustand stores instead of threading data through parent props.
+- **Zustand for shared state**: Global or cross-cutting state (user session, cart, theme, wizard step, etc.) lives in Zustand stores; components subscribe with selectors and stay independent of their parents.
