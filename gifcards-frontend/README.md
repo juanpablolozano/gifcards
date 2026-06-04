@@ -53,7 +53,19 @@ curl http://localhost:8787/health
 Configura la URL en un archivo `.env` en la raíz del frontend cuando la integración esté activa:
 
 ```bash
+cp .env.example .env
+```
+
+Variables requeridas para login (Firebase Auth):
+
+```bash
 VITE_API_URL=http://localhost:8787
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_APP_ID=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
 ```
 
 Más detalle en [gifcards-backend/README.md](../gifcards-backend/README.md).
