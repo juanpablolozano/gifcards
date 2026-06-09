@@ -8,3 +8,5 @@ AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
 S3_BUCKET=
 BEELY_API_KEY=
+APP_URL=http://localhost:5173
+WALLET_JWT_SECRET=change-me-in-production

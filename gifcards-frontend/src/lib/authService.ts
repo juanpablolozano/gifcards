@@ -2,6 +2,7 @@ import {
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
@@ -34,6 +35,10 @@ export async function signOutUser() {
   return signOut(auth);
 }
 
+export async function sendPasswordReset(email: string) {
+  return sendPasswordResetEmail(auth, email);
+}
+
 export function subscribeToAuthState(onChange: (user: User | null) => void) {
   return onAuthStateChanged(auth, onChange);
 }
@@ -58,6 +63,8 @@ export function mapFirebaseAuthError(code: string): string {
       return "errors.popupClosed";
     case "auth/network-request-failed":
       return "errors.network";
+    case "auth/invalid-email":
+      return "errors.validationEmail";
     default:
       return "errors.generic";
   }
