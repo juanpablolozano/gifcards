@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import { HomePage } from "../pages/HomePage";
+import { MerchantLayout } from "../layouts/MerchantLayout";
+import { DashboardPlaceholderPage } from "../pages/DashboardPlaceholderPage";
 import { LoginPage } from "../pages/LoginPage";
 import { SignupPage } from "../pages/SignupPage";
 import { StubPage } from "../pages/StubPage";
@@ -10,7 +11,14 @@ export function AppRoutes() {
   return (
     <Routes>
       <Route element={<ProtectedRoute />}>
-        <Route path="/" element={<HomePage />} />
+        <Route element={<MerchantLayout />}>
+          <Route path="/" element={<DashboardPlaceholderPage />} />
+          <Route path="/gift-cards" element={<DashboardPlaceholderPage />} />
+          <Route path="/gift-cards/new" element={<DashboardPlaceholderPage />} />
+          <Route path="/redeem" element={<DashboardPlaceholderPage />} />
+          <Route path="/transactions" element={<DashboardPlaceholderPage />} />
+          <Route path="/settings" element={<DashboardPlaceholderPage />} />
+        </Route>
       </Route>
 
       <Route element={<GuestRoute />}>

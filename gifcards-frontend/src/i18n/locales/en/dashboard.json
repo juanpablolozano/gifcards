@@ -1,0 +1,24 @@
+{
+  "brand": "Gifcards Admin",
+  "brandSubtitle": "Business Management",
+  "nav": {
+    "dashboard": "Dashboard",
+    "giftCards": "Gift Cards",
+    "redeem": "Redeem",
+    "transactions": "Transactions",
+    "settings": "Settings"
+  },
+  "pages": {
+    "dashboard": "Dashboard",
+    "giftCards": "Gift Cards",
+    "redeem": "Redeem",
+    "transactions": "Transactions",
+    "settings": "Settings",
+    "createGiftCard": "Create gift card"
+  },
+  "createGiftCard": "Create gift card",
+  "notifications": "Notifications",
+  "adminRole": "Admin",
+  "logout": "Log out",
+  "comingSoon": "Coming soon"
+}

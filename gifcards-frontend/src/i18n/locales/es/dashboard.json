@@ -1,0 +1,24 @@
+{
+  "brand": "Gifcards Admin",
+  "brandSubtitle": "Gestión del negocio",
+  "nav": {
+    "dashboard": "Panel",
+    "giftCards": "Gift Cards",
+    "redeem": "Canjear",
+    "transactions": "Transacciones",
+    "settings": "Configuración"
+  },
+  "pages": {
+    "dashboard": "Panel",
+    "giftCards": "Gift Cards",
+    "redeem": "Canjear",
+    "transactions": "Transacciones",
+    "settings": "Configuración",
+    "createGiftCard": "Crear gift card"
+  },
+  "createGiftCard": "Crear gift card",
+  "notifications": "Notificaciones",
+  "adminRole": "Admin",
+  "logout": "Cerrar sesión",
+  "comingSoon": "Próximamente"
+}
